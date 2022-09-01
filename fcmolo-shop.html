@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"  class="light-theme">
+<head>
+    <meta charset="UTF-8">
+    <title>Фаншоп</title>
+    <link rel="stylesheet" href="css/fcmolo-shop.css">
+    <script src="https://kit.fontawesome.com/4421f0ee91.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="header">
+    <div>
+        <h1 class="size-h1 lng-h1">Футбольный клуб Молодечно</h1>
+        <p class="line-1 anim-typewriter lng-p">ЛУЧШИЙ КЛУБ - ЛУЧШЕГО ГОРОДА!</p>
+    </div>
+    <div>
+        <div>
+            <img class="logo-header" src="img/logo-header/molo-logo-header.png" alt="">
+        </div>
+        <div class="link-header">
+            <span class="theme">
+                <i class="fa-regular fa-lightbulb"></i>
+            </span>
+            <a href="https://www.instagram.com/fcmolodechno/">
+                <i class="fa-brands link-icon fa-instagram"></i>
+            </a>
+            <a href="https://vk.com/fcmolodechno">
+                <i class="fa-brands link-icon fa-vk"></i>
+            </a>
+            <a href="tiktok.com/@fcmolodechno">
+                <i class="fa-brands link-icon fa-tiktok"></i>
+            </a>
+            <div class="lang df">
+                <button class="english" value="en" id="lang-en">EN</button>
+                <button class="russian" value="ru" id="lang-ru">RU</button>
+            </div>
+            <div class="header_cart cart" tabindex="0">
+                <div class="cart_text">
+                    <i class="fa-solid link-icon fa-cart-shopping"></i>
+                    <span class="cart_quantity">0</span>
+                </div>
+                <div class="cart-content">
+                    <ul class="cart-content_list">
+                        <li class="cart-content_item"></li>
+                    </ul>
+                    <div class="cart-content_bottom">
+                        <div class="cart-content_fullprice">
+                            <span>Итого:</span>
+                            <span class="fullprice"></span>
+                        </div>
+                        <button class="cart-content_btn btn lng-order">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <button class="custom-menu-button">
+        <a hfer="https://molokoandmilk.github.io/fcmolo.html" target="_blank" class="anim-button ">Главная</a>
+    </button>
+    <button class="custom-menu-button">
+        <a class="anim-button lng-btnschedule" onclick="openDialog()">Расписание</a>
+    </button>
+    <button class="custom-menu-button">
+        <a class="anim-button lng-btncompound" hfer="https://molokoandmilk.github.io/fcmolo-players.html" target="_blank" >Состав</a>
+    </button>
+    <button class="custom-menu-button">
+        <a hfer="https://molokoandmilk.github.io/fcmolo-img.html" target="_blank" class="anim-button lng-btnshop">Галерея</a>
+    </button>
+</div>
+<div class="dialog-container">
+    <div class="menu-math relative-for-button-menu-math">
+        <div  class="menu-math-left-colum">
+            <div>ФК МОЛОДЕЧНО</div>
+            <div class="logo-menu-math-left-colum"></div>
+        </div>
+        <div class="time-count">
+            <h2 class="time-count-title lng-nextgame">До следующего матча</h2>
+            <div class="time-count-content">
+                <div class="time-count-item time-count-days">
+                    <div class="time-count-val">00</div>
+                    <span class="time-count-text lng-taimdays">дней</span>
+                </div>
+                <div class="time-cont-separator">:</div>
+                <div class="time-count-item time-count-hours">
+                    <div class="time-count-val">00</div>
+                    <span class="time-count-text  lng-taimhours">часов</span>
+                </div>
+                <div class="time-cont-separator">:</div>
+                <div class="time-count-item time-count-minutes">
+                    <div class="time-count-val">00</div>
+                    <span class="time-count-text  lng-taimminutes">минут</span>
+                </div>
+                <div class="time-cont-separator">:</div>
+                <div class="time-count-item time-count-seconds">
+                    <div class="time-count-val">00</div>
+                    <span class="time-count-text  lng-taimseconds">секунд</span>
+                </div>
+            </div>
+        </div>
+        <div class="menu-math-right-colum">
+            <div>ФК СМОРГОНЬ
+                <button class="menu-math-button-close" onclick="closeDialog()">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="logo-menu-math-right-colum"></div>
+        </div>
+    </div>
+    <div class="backdrop" onclick="closeDialog()"></div>
+</div>
+<div class="shop-container">
+    <div class="product ">
+        <div class="product_image">
+            <img src="img/shop/scurf.jpg" alt="шарф">
+        </div>
+        <h3 class="product_title lng-shopscarf">
+            Клубный шарф
+        </h3>
+        <div class="product_price product-price">
+            <span class="product-price_current">40p</span>
+        </div>
+        <button class="product_btn btn lng-addcart1">Добавить в корзину</button>
+    </div>
+    <div class="product">
+        <div class="product_image">
+            <img src="img/shop/flag.jpg" alt="флаг">
+        </div>
+        <h3 class="product_title lng-shopflag">
+            Клубный флаг
+        </h3>
+        <div class="product_price product-price">
+            <span class="product-price_current">20p</span>
+        </div>
+        <button class="product_btn btn lng-addcart2">Добавить в корзину</button>
+    </div>
+    <div class="product">
+        <div class="product_image">
+            <img src="img/shop/shirt.png" alt="майка">
+        </div>
+        <h3 class="product_title  lng-shoptshirt">
+            Майка
+        </h3>
+        <div class="product_price product-price">
+            <span class="product-price_current">80p</span>
+        </div>
+        <button class="product_btn btn lng-addcart3">Добавить в корзину</button>
+    </div>
+    <div class="product">
+        <div class="product_image">
+            <img src="img/shop/cup.jpg" alt="кружка">
+        </div>
+        <h3 class="product_title lng-shopcup">
+            Кружка
+        </h3>
+        <div class="product_price product-price">
+            <span class="product-price_current">13p</span>
+        </div>
+        <button class="product_btn btn lng-addcart4">Добавить в корзину</button>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-team">
+        <p class="phoverfooter lng-teamfooter">Команда</p>
+        <p class="phoverfooter lng-staff">Тренерский штаб</p>
+        <p class="phoverfooter lng-cast">Основной состав</p>
+        <p class="phoverfooter lng-duplicate">Дублирующий состав</p>
+        <p class="phoverfooter lng-school">Футбольная школа</p>
+    </div>
+    <div class="footer-club">
+        <p class="phoverfooter lng-club">О клубе</p>
+        <p class="phoverfooter lng-management">Руководство</p>
+        <p class="phoverfooter lng-stadium">Стадион</p>
+        <p class="phoverfooter lng-story">История</p>
+        <p class="phoverfooter lng-media">Медиа</p>
+        <p class="phoverfooter lng-documents">Документы</p>
+    </div>
+    <div class="footer-season">
+        <p class="phoverfooter lng-protocols">Протоколы матчей</p>
+        <p class="phoverfooter lng-calendar">Календарь-2022</p>
+    </div>
+</div>
+<script src="js/cart.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/popup.js"></script>
+<script src="js/taimer.js"></script>
+</body>
+</html>
